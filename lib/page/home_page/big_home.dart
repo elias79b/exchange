@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:srafi1/constant/color.dart';
 import 'package:srafi1/constant/screen_size.dart';
+import 'package:srafi1/widgets/chart_widget/big_chart.dart';
 import 'package:srafi1/widgets/header_information.dart';
 import 'package:srafi1/widgets/header_menu.dart';
+import 'package:srafi1/widgets/market_widget/big_market.dart';
 
 
 class BigHomePage extends StatefulWidget {
@@ -26,6 +28,19 @@ class _BigHomePageState extends State<BigHomePage> {
               child: Column(
                 children: [
                   HeaderInformation(context),
+                  SizedBox(height: 20,),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        children: [
+                          BigChart(),
+                          BigMarket(),
+                        ],
+                      ),
+
+                    ],
+                  )
                 ],
               ),
             ),

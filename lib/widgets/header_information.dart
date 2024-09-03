@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:srafi1/constant/color.dart';
+import 'package:srafi1/constant/decoration.dart';
 import 'package:srafi1/constant/size.dart';
 
 Widget HeaderInformation(BuildContext context){
   return Container(
     padding: EdgeInsets.symmetric(horizontal: ConstSize.info_horizontal_padding,vertical: ConstSize.info_vertical_padding),
-    decoration: BoxDecoration(
-      color: CLR.header_black,
-      borderRadius: BorderRadius.all(Radius.circular(ConstSize.card_radius))
-    ),
+    decoration: DCR.info_decoration,
     child: Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [

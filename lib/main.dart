@@ -6,6 +6,7 @@ import 'package:srafi1/page/home_page/big_home.dart';
 import 'package:srafi1/page/home_page/small_home.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
