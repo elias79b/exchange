@@ -5,6 +5,7 @@ import 'package:srafi1/widgets/chart_widget/big_chart.dart';
 import 'package:srafi1/widgets/header_information.dart';
 import 'package:srafi1/widgets/header_menu.dart';
 import 'package:srafi1/widgets/market_widget/big_market.dart';
+import 'package:srafi1/widgets/orderbook_widget/big_orderbook.dart';
 
 
 class BigHomePage extends StatefulWidget {
@@ -35,7 +36,12 @@ class _BigHomePageState extends State<BigHomePage> {
                       Column(
                         children: [
                           BigChart(),
+                          SizedBox(
+                            height: 10,
+                          ),
                           BigMarket(),
+                          SizedBox(height: ScreenSize.width*0.01,),
+                          BigOrderBook(),
                         ],
                       ),
 
