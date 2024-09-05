@@ -41,7 +41,7 @@ class _BigHomePageState extends State<BigHomePage> {
                           ),
                           BigMarket(),
                           SizedBox(height: ScreenSize.width*0.01,),
-                          BigOrderBook(),
+                          Expanded(child: BigOrderBook()),
                         ],
                       ),
 
